@@ -13,8 +13,10 @@ body {
   height: 100%;
   width: 100%;
 }
-html.lenis {
-  height: auto;
+#main{
+width: 100%;
+position: relative;
+overflow: hidden;
 }
 
 .lenis.lenis-smooth {
@@ -105,7 +107,7 @@ html.lenis {
 }
 .h1 h1 {
   font-weight: 100;
-  opacity: 0;
+ 
 }
 .h1 h1:nth-child(1) {
   opacity: 1;
@@ -134,14 +136,14 @@ html.lenis {
 }
 .p2 p {
   font-size: 1rem;
-  opacity: 0;
+ 
 }
 .p2 p:nth-child(1) {
   opacity: 1;
 }
 .p p {
     font-size: 1rem;
-    opacity: 0;
+
   }
   .p p:nth-child(1) {
     opacity: 1;
@@ -169,12 +171,7 @@ button i {
   color: #b71226;
   font-size: 1.5rem;
 }
-.button button{
-    opacity: 0;
-}
-.button button:nth-child(1){
-    opacity: 1;
-}
+
 #page2{
     display: flex;
 }
