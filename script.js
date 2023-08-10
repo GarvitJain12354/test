@@ -13,7 +13,7 @@ const initSmoothScrolling = () => {
     };
     requestAnimationFrame(scrollFn);
 };
-
+initSmoothScrolling()
 var div =  gsap.utils.toArray(".box")
 
 var tl =  gsap.timeline({
