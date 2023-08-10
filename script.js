@@ -1,3 +1,19 @@
+let lenis;
+
+const initSmoothScrolling = () => {
+    lenis = new Lenis({
+        lerp: 0.085,
+        smoothWheel: true,
+    });
+
+    lenis.on("scroll", () => ScrollTrigger.update());
+    const scrollFn = (time) => {
+        lenis.raf(time);
+        requestAnimationFrame(scrollFn);
+    };
+    requestAnimationFrame(scrollFn);
+};
+
 var div =  gsap.utils.toArray(".box")
 
 var tl =  gsap.timeline({
@@ -6,7 +22,8 @@ var tl =  gsap.timeline({
         pin:true,
         start:"top top",
         scrub:0.5,
-       end:"200% 0%"
+       end:"180% 0%",
+       
     }
 })
 .to(".sec:nth-child(1)",{
